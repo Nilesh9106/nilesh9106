@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Frameworks of Javascript and Data structures**
 
-- 👨‍💻 All of my projects are available at [https://nilesh-portfolio.netlify.app/](https://nilesh-portfolio.netlify.app/)
+- 👨‍💻 All of my projects are available at [My portfolio](https://nilesh-portfolio.netlify.app/)
 
 - 📫 How to reach me **nileshdarji282003@gmail.com**
 
@@ -27,4 +27,5 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=nilesh9106&show_icons=true&locale=en" alt="nilesh9106" /></p>
 
+<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=nilesh9106&theme=dark" alt="nilesh9106" /></p>
 
