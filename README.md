@@ -5,7 +5,7 @@
 
 - 🌱 I’m currently learning **Frameworks of Javascript and Data structures**
 
-- 👨‍💻 All of my projects are available at [My portfolio](https://nilesh-portfolio.netlify.app/)
+- 👨‍💻 All of my projects are available at [My portfolio](https://nileshdarji.netlify.app/)
 
 - 📫 How to reach me **nileshdarji282003@gmail.com**
 
