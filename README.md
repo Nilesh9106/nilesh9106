@@ -6,7 +6,7 @@
 
 - 🌱 I’m currently learning **Frameworks and App development**
 
-- 👨‍💻 All of my projects are available at [my portfolio](https://nileshdarji.netlify.app/)
+- 👨‍💻 All of my projects are available at [my portfolio](https://nileshdarji.dev/)
 
 - 📝 I write articles on [Hashnode](https://nileshdarji.hashnode.dev/)
 
