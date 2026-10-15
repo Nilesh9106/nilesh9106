@@ -20,7 +20,7 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg"><img src="./assets/contributions-light.svg" alt="870 contributions in the last year" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg"><img src="./assets/contributions-light.svg" alt="871 contributions in the last year" width="100%"></picture>
 
 ## Ask about my work
 
