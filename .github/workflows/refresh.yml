@@ -1,0 +1,39 @@
+name: Refresh profile
+
+on:
+  schedule:
+    - cron: "30 1 * * *" # daily, 07:00 IST
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths-ignore: ["README.md", "assets/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v2
+      - name: Build README and images
+        run: bun run build
+        env:
+          # Optional PAT (read:user) so private contributions are counted; falls back to the job token.
+          GH_TOKEN: ${{ secrets.GH_PAT || secrets.GITHUB_TOKEN }}
+      - name: Commit changes
+        run: |
+          git add README.md assets
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh profile"
+          git push

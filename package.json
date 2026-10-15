@@ -1,0 +1,8 @@
+{
+	"name": "nilesh9106-profile",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "bun scripts/build.ts"
+	}
+}
