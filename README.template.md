@@ -4,10 +4,6 @@
 
 <p>{{links}}</p>
 
-## Projects
-
-{{projects}}
-
 ## Open source
 
 {{opensource}}
@@ -16,6 +12,7 @@
 
 {{writing}}
 
+{{lately}}
 ## Activity
 
 {{contributions}}

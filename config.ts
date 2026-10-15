@@ -14,4 +14,7 @@ export const config = {
 		{ label: "Email", href: "mailto:nileshdarji282003@gmail.com" },
 	],
 	posts: 3,
+	activity: 5,
+	// Repos left out of the activity list.
+	activityExclude: ["Nilesh9106"],
 };

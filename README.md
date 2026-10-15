@@ -4,11 +4,6 @@
 
 <p><a href="https://nileshdarji.dev">Website</a> · <a href="https://nileshdarji.dev/resume.pdf">Resume</a> · <a href="https://www.linkedin.com/in/thenileshdarji">LinkedIn</a> · <a href="https://x.com/thenileshdarji">X</a> · <a href="mailto:nileshdarji282003@gmail.com">Email</a></p>
 
-## Projects
-
-<a href="https://nileshdarji.dev/projects/sdlc-studio/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-sdlc-studio-dark.svg"><img src="./assets/project-sdlc-studio-light.svg" alt="SDLC Studio: An AI workspace that takes client projects from requirements to delivery, with a multi-agent assistant built in." width="400"></picture></a> <a href="https://nileshdarji.dev/projects/contracthub/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-contracthub-dark.svg"><img src="./assets/project-contracthub-light.svg" alt="ContractHub: Turns PDFs, scans, Excel rate sheets and emails into structured, versioned, searchable contracts." width="400"></picture></a>
-<a href="https://nileshdarji.dev/projects/meeting-copilot/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-meeting-copilot-dark.svg"><img src="./assets/project-meeting-copilot-light.svg" alt="Meeting Copilot: One meeting-capture system across four surfaces, with real-time speech-to-text feeding SDLC Studio." width="400"></picture></a> <a href="https://nileshdarji.dev/projects/remote-mcp-server/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/project-remote-mcp-server-dark.svg"><img src="./assets/project-remote-mcp-server-light.svg" alt="Remote MCP Server: A remote MCP server that gives coding agents secure, scoped access to project requirements and tickets." width="400"></picture></a>
-
 ## Open source
 
 - [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>590 npm downloads last month</sub>
@@ -18,9 +13,17 @@
 
 - [Keeping an eye on production application logs with Grafana Loki](https://nileshdarji.dev/blog/keeping-an-eye-on-production-logs-with-grafana-loki/) <sub>Mar 2025</sub>
 
+## Lately
+
+- Released [**markdown-to-doc v1.1.3**](https://github.com/Nilesh9106/markdown-to-doc/releases/tag/v1.1.3) <sub>Sep 14, 2026</sub>
+- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Task list and raw HTML support (#23)](https://github.com/Nilesh9106/markdown-to-doc/commit/0c478d96f3530de8465bf6fbe7729a138f8d7655) <sub>Sep 14, 2026</sub>
+- [officetopdf](https://github.com/Nilesh9106/officetopdf): [Stop updating platform package versions](https://github.com/Nilesh9106/officetopdf/commit/0f9e0a57ed7738fecff48160d6599776cb4e9799) <sub>Sep 14, 2026</sub>
+- Released [**officetopdf v0.0.2**](https://github.com/Nilesh9106/officetopdf/releases/tag/v0.0.2) <sub>Sep 13, 2026</sub>
+- [hiring-assesment](https://github.com/Nilesh9106/hiring-assesment): [Add setup command to package.json and update README instructions](https://github.com/Nilesh9106/hiring-assesment/commit/4f63c3052933a720f5b4382d99acec09be1945c1) <sub>Jan 8, 2026</sub>
+
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg"><img src="./assets/contributions-light.svg" alt="870 contributions in the last year" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg"><img src="./assets/contributions-light.svg" alt="871 contributions in the last year. Languages: TypeScript 39%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 15%" width="100%"></picture>
 
 ## Ask about my work
 

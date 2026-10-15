@@ -1,4 +1,4 @@
-import type { ContributionDay, Project } from "./data";
+import type { ContributionDay, Language } from "./data";
 import { ditherField, levelDefs } from "./dither";
 import { MONO, SANS, type Theme } from "./theme";
 
@@ -72,44 +72,10 @@ ${nowLines.map((l, i) => `<text x="48" y="${246 + i * 22}" font-size="15" fill="
 	return svg(W, H, `${d.name}: ${d.positioning}`, body);
 }
 
-export function projectCard(t: Theme, p: Project, index: number) {
-	const W = 420;
-	const H = 176;
-	const dot = 3;
-	const summary = wrap(p.summary, 58, 3);
-	const defs = `<defs>${levelDefs("i", dot, t.ink, 0.22)}${levelDefs("a", dot, t.primary, 0.75)}</defs>`;
-	const field = ditherField({
-		id: "i",
-		accentId: "a",
-		x: W - 192,
-		y: 0,
-		width: 192,
-		height: 48,
-		dot,
-		seed: 0.8 + index * 1.7,
-		fade: false,
-		mask: (fx, fy) => 1.5 * (fx * 0.6 + (1 - fy) * 0.4) ** 1.5,
-	});
-	const metric = p.metric
-		? `<text x="22" y="148" font-size="26" font-weight="600" letter-spacing="-0.5" fill="${t.foreground}">${esc(p.metric.value)}</text>
-<text x="22" y="164" font-size="12" fill="${t.muted}">${esc(p.metric.label)}</text>`
-		: "";
-	const body = `${defs}
-<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="2" fill="${t.background}" stroke="${t.border}"/>
-<g>${field}</g>
-<g font-family="${SANS}">
-<rect x="22" y="27" width="7" height="7" fill="${t.primary}"/>
-<text x="37" y="35" font-size="16" font-weight="600" fill="${t.foreground}">${esc(p.title)}</text>
-${summary.map((l, i) => `<text x="22" y="${62 + i * 18}" font-size="13" fill="${t.muted}">${esc(l)}</text>`).join("")}
-${metric}
-<text x="${W - 22}" y="164" text-anchor="end" font-family="${MONO}" font-size="12" fill="${t.muted}">Read →</text>
-</g>`;
-	return svg(W, H, `${p.title}: ${p.summary}`, body);
-}
-
 export function contributions(
 	t: Theme,
 	d: { total: number; weeks: ContributionDay[][] },
+	languages: Language[] = [],
 ) {
 	const dot = 3;
 	const size = dot * 4;
@@ -117,7 +83,8 @@ export function contributions(
 	const left = 32;
 	const top = 44;
 	const W = left * 2 + d.weeks.length * step - 3;
-	const H = top + 7 * step + 34;
+	const calendarH = top + 7 * step + 34;
+	const H = languages.length ? calendarH + 74 : calendarH;
 	// Contribution levels 1-4 map to dither densities; the busiest days use the accent.
 	const density = [1, 4, 8, 12, 16];
 	const defs = `<defs>${levelDefs("i", dot, t.ink, 0.7)}${levelDefs("a", dot, t.primary, 1)}</defs>`;
@@ -153,13 +120,46 @@ export function contributions(
 		.map((l, i) => cell(l, legendX + 34 + i * step, legendY))
 		.join("");
 
+	// Language mix: one dithered bar, each language a different density.
+	const langDensity = [16, 16, 11, 7, 4, 2];
+	const langCell = (i: number, x: number, y: number) =>
+		`<use href="#${i === 0 ? "a" : "i"}${langDensity[Math.min(i, langDensity.length - 1)]}" x="${x}" y="${y}"/>`;
+	let langBar = "";
+	let langLegend = "";
+	if (languages.length) {
+		const barY = calendarH + 14;
+		const cols = Math.floor((W - left * 2 + 3) / step);
+		// Largest-remainder split of the columns, so the bar always fills exactly.
+		const raw = languages.map((l) => l.share * cols);
+		const widths = raw.map(Math.floor);
+		const order = raw
+			.map((r, i) => [r - Math.floor(r), i] as const)
+			.sort((a, b) => b[0] - a[0]);
+		for (let k = 0; k < cols - widths.reduce((a, b) => a + b, 0); k++)
+			widths[order[k % order.length][1]]++;
+		let col = 0;
+		widths.forEach((w, i) => {
+			for (let c = 0; c < w; c++)
+				langBar += langCell(i, left + (col + c) * step, barY);
+			col += w;
+		});
+		let x = left;
+		const legendRow = barY + 30;
+		languages.forEach((l, i) => {
+			const label = `${l.name} ${Math.round(l.share * 100)}%`;
+			langLegend += `${langCell(i, x, legendRow - 10)}<text x="${x + size + 6}" y="${legendRow}">${esc(label)}</text>`;
+			x += size + 6 + label.length * 6.7 + 18;
+		});
+	}
+
 	const body = `${defs}
 <rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="2" fill="${t.background}" stroke="${t.border}"/>
 <g font-family="${MONO}" font-size="11" fill="${t.muted}">${months.join("")}
 <text x="${left}" y="${legendY + 10}">${d.total.toLocaleString("en")} contributions in the last year</text>
 <text x="${legendX}" y="${legendY + 10}">Less</text>
 <text x="${legendX + 34 + 5 * step + 4}" y="${legendY + 10}">More</text>
+${langLegend}
 </g>
-<g>${cells}${legend}</g>`;
+<g>${cells}${legend}${langBar}</g>`;
 	return svg(W, H, `${d.total} contributions in the last year`, body);
 }

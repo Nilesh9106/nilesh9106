@@ -3,29 +3,27 @@
 import { mkdir } from "node:fs/promises";
 import { config } from "../config";
 import {
+	loadActivity,
 	loadContributions,
+	loadLanguages,
 	loadPackageStats,
 	loadPosts,
 	loadSite,
 } from "./lib/data";
-import { contributions, header, projectCard } from "./lib/svg";
+import { contributions, header } from "./lib/svg";
 import { themes } from "./lib/theme";
 
 const root = new URL("..", import.meta.url).pathname;
 const asset = (name: string) => `assets/${name}`;
 
-const [site, posts, contrib] = await Promise.all([
+const [site, posts, contrib, languages, activity] = await Promise.all([
 	loadSite(),
 	loadPosts(),
 	loadContributions(),
+	loadLanguages(),
+	loadActivity(config.activity, config.activityExclude),
 ]);
 const packages = await loadPackageStats(site.packages);
-
-const slug = (s: string) =>
-	s
-		.toLowerCase()
-		.replace(/[^a-z0-9]+/g, "-")
-		.replace(/^-|-$/g, "");
 
 await mkdir(`${root}assets`, { recursive: true });
 const files: Record<string, string> = {};
@@ -37,14 +35,11 @@ for (const t of themes) {
 		now: config.now,
 		site: config.site,
 	});
-	site.projects.forEach((p, i) => {
-		files[asset(`project-${slug(p.title)}-${t.name}.svg`)] = projectCard(
-			t,
-			p,
-			i,
-		);
-	});
-	files[asset(`contributions-${t.name}.svg`)] = contributions(t, contrib);
+	files[asset(`contributions-${t.name}.svg`)] = contributions(
+		t,
+		contrib,
+		languages,
+	);
 }
 
 /** <picture> that follows GitHub's light/dark theme. */
@@ -59,23 +54,19 @@ const date = (d: Date) =>
 		timeZone: "UTC",
 	});
 
+const day = (d: Date) =>
+	d.toLocaleDateString("en", {
+		day: "numeric",
+		month: "short",
+		year: "numeric",
+		timeZone: "UTC",
+	});
+
 const blocks: Record<string, string> = {
 	header: `<a href="${config.site}">${picture("header", `${config.name}: ${site.positioning}`, "100%")}</a>`,
 	links: config.links
 		.map((l) => `<a href="${l.href}">${l.label}</a>`)
 		.join(" · "),
-	projects: site.projects
-		.map(
-			(p) =>
-				`<a href="${p.url}">${picture(`project-${slug(p.title)}`, `${p.title}: ${p.summary}`, "400")}</a>`,
-		)
-		// GitHub turns line breaks into <br>, so keep each row of two on one line.
-		.reduce<string[]>((rows, card, i) => {
-			if (i % 2 === 0) rows.push(card);
-			else rows[rows.length - 1] += ` ${card}`;
-			return rows;
-		}, [])
-		.join("\n"),
 	opensource: packages
 		.map((p) => {
 			const stats = [
@@ -92,9 +83,19 @@ const blocks: Record<string, string> = {
 	writing: posts
 		.map((p) => `- [${p.title}](${p.url}) <sub>${date(p.date)}</sub>`)
 		.join("\n"),
+	// Heading included, so the section disappears when there's nothing recent.
+	lately: activity.length
+		? `## Lately\n\n${activity
+				.map((a) =>
+					a.kind === "release"
+						? `- Released [**${a.repo} ${a.title}**](${a.url}) <sub>${day(a.date)}</sub>`
+						: `- [${a.repo}](${a.repoUrl}): [${a.title.replace(/([[\]])/g, "\\$1")}](${a.url}) <sub>${day(a.date)}</sub>`,
+				)
+				.join("\n")}\n`
+		: "",
 	contributions: picture(
 		"contributions",
-		`${fmt(contrib.total)} contributions in the last year`,
+		`${fmt(contrib.total)} contributions in the last year. Languages: ${languages.map((l) => `${l.name} ${Math.round(l.share * 100)}%`).join(", ")}`,
 		"100%",
 	),
 	ask: site.askEnabled
