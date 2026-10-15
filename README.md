@@ -1,6 +1,6 @@
 <!-- Generated from README.template.md by scripts/build.ts. Edit the template, not this file. -->
 
-<a href="https://nileshdarji.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg"><img src="./assets/header-light.svg" alt="Nilesh Darji: Founding engineer building AI-native products, from first commit to production." width="100%"></picture></a>
+<a href="https://nileshdarji.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg?v=1iydjcr0"><img src="./assets/header-light.svg?v=1uktxtzl" alt="Nilesh Darji: Founding engineer building AI-native products, from first commit to production." width="100%"></picture></a>
 
 <p><a href="https://nileshdarji.dev">Website</a> · <a href="https://nileshdarji.dev/resume.pdf">Resume</a> · <a href="https://www.linkedin.com/in/thenileshdarji">LinkedIn</a> · <a href="https://x.com/thenileshdarji">X</a> · <a href="mailto:nileshdarji282003@gmail.com">Email</a></p>
 
@@ -23,7 +23,7 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg"><img src="./assets/contributions-light.svg" alt="873 contributions in the last year. Languages: TypeScript 39%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=29ovw1op"><img src="./assets/contributions-light.svg?v=397jmsmc" alt="873 contributions in the last year. Languages: TypeScript 39%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 

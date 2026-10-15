@@ -43,8 +43,11 @@ for (const t of themes) {
 }
 
 /** <picture> that follows GitHub's light/dark theme. */
+// GitHub caches README images by URL, so a content hash makes changes show up.
+const src = (name: string) =>
+	`./${name}?v=${Bun.hash(files[name] ?? "").toString(36).slice(0, 8)}`;
 const picture = (base: string, alt: string, width?: string) =>
-	`<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/${base}-dark.svg"><img src="./assets/${base}-light.svg" alt="${alt.replace(/"/g, "&quot;")}"${width ? ` width="${width}"` : ""}></picture>`;
+	`<picture><source media="(prefers-color-scheme: dark)" srcset="${src(asset(`${base}-dark.svg`))}"><img src="${src(asset(`${base}-light.svg`))}" alt="${alt.replace(/"/g, "&quot;")}"${width ? ` width="${width}"` : ""}></picture>`;
 
 const fmt = (n: number) => n.toLocaleString("en");
 const date = (d: Date) =>
