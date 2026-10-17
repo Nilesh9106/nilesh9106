@@ -6,7 +6,7 @@
 
 ## Open source
 
-- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>590 npm downloads last month</sub>
+- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>590 npm downloads last month · 1 ★</sub>
 - [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>624 npm downloads last month</sub>
 
 ## Writing
@@ -15,21 +15,19 @@
 
 ## Lately
 
-- Released [**markdown-to-doc v1.1.3**](https://github.com/Nilesh9106/markdown-to-doc/releases/tag/v1.1.3) <sub>Sep 14, 2026</sub>
-- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Task list and raw HTML support (#23)](https://github.com/Nilesh9106/markdown-to-doc/commit/0c478d96f3530de8465bf6fbe7729a138f8d7655) <sub>Sep 14, 2026</sub>
+- Released [**markdown-to-doc v1.2.0**](https://github.com/Nilesh9106/markdown-to-doc/releases/tag/v1.2.0) <sub>Oct 17, 2026</sub>
+- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Add browser and edge runtime support (#39)](https://github.com/Nilesh9106/markdown-to-doc/commit/88e58e5df8e27ee1c29477c81a3fe22b8bb5cbc9) <sub>Oct 17, 2026</sub>
 - [officetopdf](https://github.com/Nilesh9106/officetopdf): [Stop updating platform package versions](https://github.com/Nilesh9106/officetopdf/commit/0f9e0a57ed7738fecff48160d6599776cb4e9799) <sub>Sep 14, 2026</sub>
 - Released [**officetopdf v0.0.2**](https://github.com/Nilesh9106/officetopdf/releases/tag/v0.0.2) <sub>Sep 13, 2026</sub>
 - [hiring-assesment](https://github.com/Nilesh9106/hiring-assesment): [Add setup command to package.json and update README instructions](https://github.com/Nilesh9106/hiring-assesment/commit/4f63c3052933a720f5b4382d99acec09be1945c1) <sub>Jan 8, 2026</sub>
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=jjodew1s"><img src="./assets/contributions-light.svg?v=1kao3zuw" alt="875 contributions in the last year. Languages: TypeScript 39%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=3lcrlhsl"><img src="./assets/contributions-light.svg?v=1o135q50" alt="882 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
-Questions about my work? [**Ask the AI on my site →**](https://nileshdarji.dev/#ask) It answers only from my projects and posts, with sources.
-
-Or give your own agent the context:
+Give your own agent the context on my work:
 
 ```sh
 curl https://nileshdarji.dev/llms.txt
