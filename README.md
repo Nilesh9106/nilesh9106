@@ -1,13 +1,13 @@
 <!-- Generated from README.template.md by scripts/build.ts. Edit the template, not this file. -->
 
-<a href="https://nileshdarji.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg?v=1iydjcr0"><img src="./assets/header-light.svg?v=1uktxtzl" alt="Nilesh Darji: Founding engineer building AI-native products, from first commit to production." width="100%"></picture></a>
+<a href="https://nileshdarji.dev"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/header-dark.svg?v=irkfwd7n"><img src="./assets/header-light.svg?v=2rjbfk61" alt="Nilesh Darji: Founding engineer building AI-native products, from first commit to production." width="100%"></picture></a>
 
 <p><a href="https://nileshdarji.dev">Website</a> · <a href="https://nileshdarji.dev/resume.pdf">Resume</a> · <a href="https://www.linkedin.com/in/thenileshdarji">LinkedIn</a> · <a href="https://x.com/thenileshdarji">X</a> · <a href="mailto:nileshdarji282003@gmail.com">Email</a></p>
 
 ## Open source
 
-- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>260 npm downloads last month · 1 ★</sub>
-- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>301 npm downloads last month</sub>
+- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>441 npm downloads last month · 1 ★</sub>
+- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>304 npm downloads last month</sub>
 
 ## Writing
 
@@ -23,7 +23,7 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=ae4tdw5n"><img src="./assets/contributions-light.svg?v=3l2ulab7" alt="891 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=19yhz528"><img src="./assets/contributions-light.svg?v=3mzpph65" alt="897 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
