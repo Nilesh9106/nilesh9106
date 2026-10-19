@@ -5,7 +5,7 @@ export const config = {
 	name: "Nilesh Darji",
 	role: "Founding Engineer · Heizen",
 	site: "https://nileshdarji.dev",
-	now: "Building SDLC Studio and Helix, its multi-agent assistant, and leading Heizen's internal product team.",
+	now: "Building SDLC Studio and Helix, its AI assistant, and leading Heizen's internal product team.",
 	links: [
 		{ label: "Website", href: "https://nileshdarji.dev" },
 		{ label: "Resume", href: "https://nileshdarji.dev/resume.pdf" },
