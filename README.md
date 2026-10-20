@@ -11,7 +11,9 @@
 
 ## Writing
 
-- [Keeping an eye on production application logs with Grafana Loki](https://nileshdarji.dev/blog/keeping-an-eye-on-production-logs-with-grafana-loki/) <sub>Mar 2025</sub>
+- [Better semantic search: filter the facts, embed the intent](https://nileshdarji.dev/blog/filter-facts-embed-intent/) <sub>Aug 2026</sub>
+- [Replace your specialist agents with a data registry](https://nileshdarji.dev/blog/one-agent-that-understands-the-data/) <sub>Aug 2026</sub>
+- [Typo-tolerant search in Postgres with pg_trgm and a GIN index](https://nileshdarji.dev/blog/typo-tolerant-search-pg-trgm/) <sub>Aug 2026</sub>
 
 ## Lately
 
@@ -23,11 +25,13 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=19yhz528"><img src="./assets/contributions-light.svg?v=3mzpph65" alt="897 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=19xmi4me"><img src="./assets/contributions-light.svg?v=1so7tkgh" alt="904 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
-Give your own agent the context on my work:
+Questions about my work? [**Ask the AI on my site →**](https://nileshdarji.dev/#ask) It answers only from my projects and posts, with sources.
+
+Or give your own agent the context:
 
 ```sh
 curl https://nileshdarji.dev/llms.txt
