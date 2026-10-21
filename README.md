@@ -25,13 +25,11 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=19xmi4me"><img src="./assets/contributions-light.svg?v=1so7tkgh" alt="904 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=14j3o9yc"><img src="./assets/contributions-light.svg?v=1j9r1t7e" alt="906 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
-Questions about my work? [**Ask the AI on my site →**](https://nileshdarji.dev/#ask) It answers only from my projects and posts, with sources.
-
-Or give your own agent the context:
+Give your own agent the context on my work:
 
 ```sh
 curl https://nileshdarji.dev/llms.txt
