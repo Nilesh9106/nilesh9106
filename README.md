@@ -17,19 +17,21 @@
 
 ## Lately
 
-- Released [**markdown-to-doc v1.2.0**](https://github.com/Nilesh9106/markdown-to-doc/releases/tag/v1.2.0) <sub>Oct 17, 2026</sub>
-- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Add browser and edge runtime support (#39)](https://github.com/Nilesh9106/markdown-to-doc/commit/88e58e5df8e27ee1c29477c81a3fe22b8bb5cbc9) <sub>Oct 17, 2026</sub>
-- [officetopdf](https://github.com/Nilesh9106/officetopdf): [Stop updating platform package versions](https://github.com/Nilesh9106/officetopdf/commit/0f9e0a57ed7738fecff48160d6599776cb4e9799) <sub>Sep 14, 2026</sub>
-- Released [**officetopdf v0.0.2**](https://github.com/Nilesh9106/officetopdf/releases/tag/v0.0.2) <sub>Sep 13, 2026</sub>
+- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Inherit styles from a DOCX template and render GFM fo…](https://github.com/Nilesh9106/markdown-to-doc/commit/3ddf6face32f33afcc42f229815e946455a165f5) <sub>Oct 22, 2026</sub>
+- [officetopdf](https://github.com/Nilesh9106/officetopdf): [Support hidden slides and xlsx UI script](https://github.com/Nilesh9106/officetopdf/commit/1b63982e7dbcf2c4a92bedaf3c88032fe9ffac80) <sub>Oct 22, 2026</sub>
+- Released [**officetopdf v0.1.4**](https://github.com/Nilesh9106/officetopdf/releases/tag/v0.1.4) <sub>Oct 22, 2026</sub>
+- [markdown-to-doc](https://github.com/Nilesh9106/markdown-to-doc): [Render LaTeX as OMML equations and add code block rendere…](https://github.com/Nilesh9106/markdown-to-doc/commit/61e8aef3e5919153c8cb26cbf9dc441181c713f8) <sub>Oct 22, 2026</sub>
 - [hiring-assesment](https://github.com/Nilesh9106/hiring-assesment): [Add setup command to package.json and update README instructions](https://github.com/Nilesh9106/hiring-assesment/commit/4f63c3052933a720f5b4382d99acec09be1945c1) <sub>Jan 8, 2026</sub>
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=37aos94u"><img src="./assets/contributions-light.svg?v=14xefn1m" alt="909 contributions in the last year. Languages: TypeScript 40%, JavaScript 30%, C++ 6%, C# 6%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=2tjtzxoj"><img src="./assets/contributions-light.svg?v=i6bwxmrj" alt="935 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
-Give your own agent the context on my work:
+Questions about my work? [**Ask the AI on my site →**](https://nileshdarji.dev/#ask) It answers only from my projects and posts, with sources.
+
+Or give your own agent the context:
 
 ```sh
 curl https://nileshdarji.dev/llms.txt
