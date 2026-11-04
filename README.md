@@ -6,8 +6,8 @@
 
 ## Open source
 
-- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>643 npm downloads last month · 1 ★</sub>
-- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>678 npm downloads last month</sub>
+- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>639 npm downloads last month · 1 ★</sub>
+- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>675 npm downloads last month</sub>
 
 ## Writing
 
@@ -25,7 +25,7 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=15479i0c"><img src="./assets/contributions-light.svg?v=39ay87ij" alt="989 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=qhuoqs0m"><img src="./assets/contributions-light.svg?v=3c4x2h9b" alt="996 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
