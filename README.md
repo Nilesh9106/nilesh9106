@@ -6,14 +6,14 @@
 
 ## Open source
 
-- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>639 npm downloads last month · 1 ★</sub>
-- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>675 npm downloads last month</sub>
+- [**markdown-to-doc**](https://github.com/Nilesh9106/markdown-to-doc): Converts Markdown into a styled Word (.docx) document in Node.js and Bun.<br><sub>638 npm downloads last month · 1 ★</sub>
+- [**officetopdf-js**](https://github.com/Nilesh9106/officetopdf): Converts DOCX, PPTX and XLSX to PDF from JavaScript in Node.js, Bun, Deno and Electron.<br><sub>696 npm downloads last month</sub>
 
 ## Writing
 
+- [Stop blaming the model: what a harness is and how to build one](https://nileshdarji.dev/blog/what-is-an-agent-harness/) <sub>Nov 2026</sub>
 - [Better semantic search: filter the facts, embed the intent](https://nileshdarji.dev/blog/filter-facts-embed-intent/) <sub>Aug 2026</sub>
 - [Replace your specialist agents with a data registry](https://nileshdarji.dev/blog/one-agent-that-understands-the-data/) <sub>Aug 2026</sub>
-- [Typo-tolerant search in Postgres with pg_trgm and a GIN index](https://nileshdarji.dev/blog/typo-tolerant-search-pg-trgm/) <sub>Aug 2026</sub>
 
 ## Lately
 
@@ -25,11 +25,13 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=qhuoqs0m"><img src="./assets/contributions-light.svg?v=3c4x2h9b" alt="996 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=3svdgp1w"><img src="./assets/contributions-light.svg?v=2c6ue0i6" alt="1,007 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
-Give your own agent the context on my work:
+Questions about my work? [**Ask the AI on my site →**](https://nileshdarji.dev/#ask) It answers only from my projects and posts, with sources.
+
+Or give your own agent the context:
 
 ```sh
 curl https://nileshdarji.dev/llms.txt
