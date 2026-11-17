@@ -25,7 +25,7 @@
 
 ## Activity
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=271jet8f"><img src="./assets/contributions-light.svg?v=1p8791rx" alt="1,047 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="./assets/contributions-dark.svg?v=18bikdjo"><img src="./assets/contributions-light.svg?v=1yq8k3gf" alt="1,050 contributions in the last year. Languages: TypeScript 41%, JavaScript 29%, C++ 6%, C# 5%, HTML 5%, Other 14%" width="100%"></picture>
 
 ## Ask about my work
 
